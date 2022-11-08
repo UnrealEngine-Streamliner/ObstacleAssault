@@ -27,6 +27,15 @@ public:
 	int32 MyInt = 99;
 
 	UPROPERTY(EditAnywhere)
+	int32 MyIntA = 0;
+
+	UPROPERTY(EditAnywhere)
+	int32 MyIntB = 0;
+
+	UPROPERTY(EditAnywhere)
+	int32 APlusB = 0;
+
+	UPROPERTY(EditAnywhere)
 	bool MyBool = false;
 
 };
