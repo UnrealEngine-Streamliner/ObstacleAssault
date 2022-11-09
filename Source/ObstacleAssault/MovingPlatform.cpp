@@ -16,11 +16,7 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 
-	MyInt = 9;
-
-	APlusB = MyIntA + MyIntB;
-
-	APlusB = MyInt + MyIntB;
+	MyX = MyVector.X;
 	
 }
 
