@@ -35,6 +35,11 @@ void AMovingPlatform::Tick(float DeltaTime)
 		// Check how far we've moved
 		distance = FVector::Dist(StartLocation, CurrentLocation);
 		// Reverse direction of motion if gone too far
+		if (distance > MovedDistance) 
+		{
+			PlatformVelocity = -PlatformVelocity;
+			StartLocation = CurrentLocation;
+		}
 
 }
 
